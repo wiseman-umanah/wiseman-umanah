@@ -1,6 +1,7 @@
 ![1722629249708](https://github.com/user-attachments/assets/132c6c2f-7518-44dc-9d1d-cffab69ebfe3)
 
 # Hi, I'm Wiseman Umanah 👋
+![status](https://img.shields.io/badge/currently-online-green.svg?style=flat-square) ![status](https://img.shields.io/badge/coding-contribution-blue.svg?style=flat-square) ![listening](https://img.shields.io/badge/listening-podcasts-black.svg?style=flat-square&logo=spotify)
 
 ## 🎓 Graduating Student of ALX Software Engineering Program
 
@@ -25,6 +26,9 @@ I am proficient in:
 
     [![My Skills](https://skillicons.dev/icons?i=bash,git,github,redis,nginx)](https://skillicons.dev) ![Puppet](https://img.shields.io/badge/Puppet-black.svg?style=flat-square&logo=puppet)
 
+- **Favourite Os**:
+
+    ![My Skills](https://skillicons.dev/icons?i=kali)
 ---
 ---
 
@@ -62,12 +66,13 @@ _For more projects, please visit the **[Repositories](https://github.com/wiseman
 
 ![Wiseman's GitHub stats](https://github-readme-stats.vercel.app/api?username=wiseman-umanah&show_icons=true&theme=dark)
 
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=wiseman-umanah&layout=compact&theme=blueberry&count_private=true&hide_border=true)
 ---
 ---
 
 ## 🌱 What I’m Learning Now
 
--  ![React](https://img.shields.io/badge/React-white.svg?style=flat-square&logo=react)
+-  ![React](https://skillicons.dev/icons?i=react)
 - Currently, I’m focusing on improving the developer experience and building robust backend systems that can scale effectively.
 
 ---
