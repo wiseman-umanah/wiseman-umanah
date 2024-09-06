@@ -35,7 +35,7 @@ I am proficient in:
 ## 💻 Key Projects
 Here are some projects I've worked on:
 
-- **[JWS Collections](https://jws_collections.vercel.app)**  
+- **[JWS Collections](https://jws-collections.vercel.app/)**
   **Role:** Full-Stack Developer  
   **Description:** JWS is an e-commerce platform showcasing a wide variety of footwear. I worked on both front and back end development.  
   **Tech Stack:** Python, PostgreSQL, Node.js, HTML/CSS
