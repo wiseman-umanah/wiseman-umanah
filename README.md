@@ -62,11 +62,8 @@ _For more projects, please visit the **[Repositories](https://github.com/wiseman
 
 ## 📈 GitHub Stats
 
-![streak-stats](https://github-readme-streak-stats.herokuapp.com/?user=wiseman-umanah&theme=radical)
+![streak-stats](https://github-readme-streak-stats.herokuapp.com/?user=wiseman-umanah&theme=radical) ![Wiseman's GitHub stats](https://github-readme-stats.vercel.app/api?username=wiseman-umanah&show_icons=true&theme=dark) ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=wiseman-umanah&layout=compact&theme=blueberry&count_private=true&hide_border=true)
 
-![Wiseman's GitHub stats](https://github-readme-stats.vercel.app/api?username=wiseman-umanah&show_icons=true&theme=dark)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=wiseman-umanah&layout=compact&theme=blueberry&count_private=true&hide_border=true)
 ---
 ---
 
