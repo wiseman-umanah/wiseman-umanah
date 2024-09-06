@@ -29,7 +29,7 @@ I am proficient in:
 - **Favourite Os**:
 
     ![My Skills](https://skillicons.dev/icons?i=kali)
----
+
 ---
 
 ## 💻 Key Projects
@@ -57,14 +57,14 @@ Here are some projects I've worked on:
 
 _For more projects, please visit the **[Repositories](https://github.com/wiseman-umanah?tab=repositories)** section._
 
----
+
 ---
 
 ## 📈 GitHub Stats
 
 ![streak-stats](https://github-readme-streak-stats.herokuapp.com/?user=wiseman-umanah&theme=radical) ![Wiseman's GitHub stats](https://github-readme-stats.vercel.app/api?username=wiseman-umanah&show_icons=true&theme=dark) ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=wiseman-umanah&layout=compact&theme=blueberry&count_private=true&hide_border=true)
 
----
+
 ---
 
 ## 🌱 What I’m Learning Now
@@ -72,13 +72,13 @@ _For more projects, please visit the **[Repositories](https://github.com/wiseman
 -  ![React](https://skillicons.dev/icons?i=react)
 - Currently, I’m focusing on improving the developer experience and building robust backend systems that can scale effectively.
 
----
+
 ---
 
 ## Read My Mind 
 You can read my thoughts and get insights from articles that I have written to help other growing developers like me in [Hashnode](https://techwhiz.hashnode.dev/)
 
----
+
 ---
 
 ## 🤝 Connect With Me
@@ -86,5 +86,5 @@ You can read my thoughts and get insights from articles that I have written to h
 
 Feel free to reach out to me for collaborations or discussions about new opportunities! Let's get in touch
 
----
+
 ---
