@@ -1,0 +1,163 @@
+main {
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+.intro,
+.services {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 100px;
+	gap: 30px;
+	width: 80%;
+	margin: 100px auto 50px;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.intro h1 {
+	font-size: 4rem;
+	margin-bottom: 20px;
+}
+
+.intro p {
+	margin-bottom: 30px;
+	color: grey;
+}
+
+.services {
+	width: 100%;
+	padding-top: 30px;
+	color: white;
+	background-color: var(--special);
+}
+
+.services-sub {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.services-sub > div {
+	display: flex;
+	width: 90%;
+	padding: 30px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to top, rgb(50, 50, 50), rgba(0, 170, 255, 0.3), rgb(73, 73, 189));
+	margin-bottom: 20px;
+	border-radius: 15px;
+}
+
+.services-sub > div:hover,
+.section3-sub > div:hover {
+	background: linear-gradient(to top, rgba(66, 17, 17, 0.497), rgb(0, 0, 0));
+}
+.services-sub > div button {
+	box-shadow: none;
+	margin-top: 10px;
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.section3,
+.section3-sub {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+.section3 {
+	margin-top: 30px;
+}
+.section3-sub > div {
+	width: 80%;
+	font-size: 1.2rem;
+	padding: 30px;
+	background: linear-gradient(to top, rgb(50, 50, 50), rgb(0, 110, 255), rgb(73, 73, 189));
+	color: white;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgb(63, 63, 63);
+	word-wrap: break-word;
+}
+
+h3 {
+	line-height: 35px;
+	margin: 10px 0;
+	font-size: 1.5rem;
+}
+
+.description {
+	padding: 0 30px;
+}
+
+.description p {
+	color: grey;
+	margin-top: 20px;
+	font-size: 1.2rem;
+}
+
+.description .status {
+	background-color: var(--special);
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 0 5px;
+	border-radius: 5px;
+	margin-top: 30px;
+}
+
+@media only screen and (min-width: 900px) {
+	.intro {
+		max-width: 1000px;
+	}
+
+	main {
+		margin-top: 200px;
+	}
+	.intro,
+	.services-sub,
+	.section3,
+	.section3-sub {
+		flex-direction: row;
+		gap: 10px;
+		margin-top: 0;
+		align-items: unset;
+	}
+
+	.services-sub {
+		flex-wrap: wrap;
+	}
+
+	.services-sub > div {
+		width: 30%;
+	}
+	
+	.section3 {
+		max-width: 1500px;
+		justify-content: center;
+		align-items: center;
+		margin: 15px auto;
+	}
+	.section3-sub {
+		flex-wrap: wrap;
+		width: 50%;
+	}
+	.section3-sub > div {
+		width: 40%;
+	}
+	.description {
+		width: 50%;
+	}
+}

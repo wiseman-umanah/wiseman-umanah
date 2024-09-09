@@ -1,0 +1,61 @@
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 60px;
+	gap: 50px;
+}
+
+.image-holder {
+	position: relative;
+	background-color: rgb(234, 234, 234);
+	width: 300px;
+	height: 300px;
+	margin-top: 150px;
+	border-radius: 10px;
+	box-shadow: 0 0 50px rgb(174, 169, 169);
+}
+
+.wiseman {
+	position: absolute;
+	bottom: 0;
+	left: 5px;
+	width: 280px;
+}
+
+.official-intro {
+	width: 80%;
+	font-weight: 700;
+}
+
+.official-intro h5,
+.official-intro p {
+	color: grey;
+	margin-bottom: 20px;
+}
+
+.official-intro h1 {
+	margin-bottom: 20px;
+	font-size: 2.5rem;
+}
+
+.official-intro h1 span {
+	color: rgb(73, 73, 189);
+}
+
+@media only screen and (min-width: 760px) {
+	.intro {
+		max-width: 1000px;
+		flex-direction: row-reverse;
+		margin: 60px auto;
+		padding: 20px 40px;
+		height: 80vh;
+	}
+}
+
+@media only screen and (min-width: 2500px) {
+	.official-intro {
+		font-size: 1.5rem;
+	}
+}
