@@ -20,11 +20,11 @@ I am proficient in:
 
 - **Frameworks & Libraries**: 
 
-    [![My Skills](https://skillicons.dev/icons?i=nodejs,flask)](https://skillicons.dev)
+    [![My Skills](https://skillicons.dev/icons?i=nodejs,flask,express,jquery)](https://skillicons.dev)
 
 - **Tools & Technologies**: 
 
-    [![My Skills](https://skillicons.dev/icons?i=bash,git,github,redis,nginx)](https://skillicons.dev) ![Puppet](https://img.shields.io/badge/Puppet-black.svg?style=flat-square&logo=puppet)
+    [![My Skills](https://skillicons.dev/icons?i=bash,git,github,redis,nginx,mongodb)](https://skillicons.dev) ![Puppet](https://img.shields.io/badge/Puppet-black.svg?style=flat-square&logo=puppet)
 
 - **Favourite Os**:
 
@@ -38,7 +38,7 @@ Here are some projects I've worked on:
 - **[JWS Collections](https://jws-collections.vercel.app/)**    
   **Role:** Full-Stack Developer  
   **Description:** JWS is an e-commerce platform showcasing a wide variety of footwear. I worked on both front and back end development.  
-  **Tech Stack:** Python, PostgreSQL, Node.js, HTML/CSS
+  **Tech Stack:** Python, MySQL, Javascript, jQuery, HTML/CSS
 
 - **[Edu Cloud Connect](https://github.com/Semaediong01/EDU-CLOUD-CONNECT)**  
   **Role:** Backend Engineer  
@@ -53,7 +53,7 @@ Here are some projects I've worked on:
 - **[Astrics](https://github.com/wiseman-umanah/Astrics)**  
   **Role:** Full-Stack Developer  
   **Description:** A web project providing the latest updates about space and the universe, aimed at educating users about science.  
-  **Tech Stack:** Python, PostgreSQL, Node.js, HTML/CSS
+  **Tech Stack:** Python, PostgreSQL, jQuery, HTML/CSS, Javascript
 
 _For more projects, please visit the **[Repositories](https://github.com/wiseman-umanah?tab=repositories)** section._
 
