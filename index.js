@@ -11,6 +11,8 @@ $(document).ready(function() {
         $('.bx-menu').show();
     });
 
+	$('#year').text(new Date().getFullYear());
+
 	function handleResize() {
         if ($(window).width() > 900) {
             $('.dropdown-menu').removeClass('open');

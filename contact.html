@@ -8,9 +8,11 @@
 	<link href='general.css' rel='stylesheet'>
 	<link href='header.css' rel='stylesheet'>
 	<link href="footer.css" rel="stylesheet">
-	<link href='body.css' rel='stylesheet'>
+	<link href='contact.css' rel='stylesheet'>
+	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+	<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 	<script src="index.js"></script>
 </head>
 <body>
@@ -20,11 +22,10 @@
 				<img src="logo.png" class="logo">
 			</div>
 			<nav class="links">
-				<div>Home</div>
-				<div>Services</div>
-				<div>Portfolio</div>
-				<div>About</div>
-				<div>Contact</div>
+				<div>HOME</div>
+				<div>SERVICES</div>
+				<div>ABOUT</div>
+				<div>CONTACT</div>
 			</nav>
 			<div class="toggle_btn">
 				<i class='bx bx-x'></i>
@@ -33,41 +34,41 @@
 		</div>
 
 		<nav class="dropdown-menu open">
-			<div>Home</div>
-			<div>Services</div>
-			<div>Portfolio</div>
-			<div>About</div>
-			<div>Contact</div>
+			<div>HOME</div>
+			<div>SERVICES</div>
+			<div>ABOUT</div>
+			<div>CONTACT</div>
 		</nav>
 	</header>
 	<main>
-		<section class="intro">
-			<div class="image-holder">
-				<img src="wiseman.png" class="wiseman">
-			</div>
+		<div class="container">
+			<section class="intro">
+			<h1>CONNECT !</h1>
 			<div class="official-intro">
-				<h5>WELCOME TO MY WORLD</h5>
-				<h1>Hi, I'm Wiseman Umanah <span>a</span> Professional Backend <span>Developer.</span></h1>
-				<p>Passionate programmer and problem solver. Constantly learning and growing. Ready for collaboration!</p>
-				<button>Hire Me</button>
+				<a href="https://www.x.com/@wisemanjoearts" class="socials">
+					<img src='https://skillicons.dev/icons?i=twitter'>
+					<div>Follow me on Twitter</div>
+				</a>
+				<a href="https://www.linkedin.com/in/wisemanumanah" class="socials">
+					<img src='https://skillicons.dev/icons?i=linkedin'>
+					<div>Connect with me on Linkedin</div>
+				</a>
+				<a href="https://www.github.com/wiseman-umanah" class="socials">
+					<img src='https://skillicons.dev/icons?i=github'>
+					<div>Let's collaborate on Github</div>
+				</a>
+				<a href="https://discordapp.com/users/1147321132647723090" class="socials">
+					<img src='https://skillicons.dev/icons?i=discord'>
+					<div>Chat with me on Discord</div>
+				</a>
+				<a href="mailto:wisemanumanah@gmail.com" class="socials">
+					<img src='https://skillicons.dev/icons?i=gmail' alt="Gmail Icon">
+					<div>Send me an Email</div>
+				</a>
 			</div>
+			<dotlottie-player src="https://lottie.host/65bdaeeb-86eb-41ec-87b1-6297f0aadb19/HPkujhzoR9.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
 		</section>
-		<section class="portfolio-section">
-			<div>
-				<div class="image-2">
-					<img src="wiseman2.jpg">
-				</div>
-				<div class="resume-intro">
-					<p>
-						Hello there, and welcome to my portfolio! I'm thrilled to have you here.
-						If you're interested in learning more about my professional journey, feel free to check out my resume. 
-						It's a quick look at the experiences, skills, and projects that shape who I am as a developer.
-						Don't hesitate to download it below!
-					</p>
-					<button>Download my Resume</button>
-				</div>
-			</div>
-		</section>
+		</div>
 	</main>
 	<footer>
 		<div class="author"><small>&copy; <span id="year"></span> Wiseman Umanah</small></div>
