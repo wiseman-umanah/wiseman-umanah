@@ -3,7 +3,7 @@
 # Hi, I'm Wiseman Umanah 👋
 ![status](https://img.shields.io/badge/currently-online-green.svg?style=flat-square) ![status](https://img.shields.io/badge/coding-contribution-blue.svg?style=flat-square) ![listening](https://img.shields.io/badge/listening-podcasts-black.svg?style=flat-square&logo=spotify)
 
-## 🎓 Graduating Student of ALX Software Engineering Program
+## 🎓 ALX Software Engineering Program Alumni
 
 ### Who Am I?
 I started my software engineering journey through the ALX Software Engineering Program. This program not only taught me the fundamentals but also provided a platform for hands-on experience with a wide range of technologies and projects. My passion lies in solving real-world problems using cutting-edge technologies.
