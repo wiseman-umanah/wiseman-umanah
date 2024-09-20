@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Wiseman Umanah | Contact{% endblock %}
+{% block css %}<link href='{{ url_for("static", filename="styles/contact.css") }}' rel='stylesheet'>{% endblock %}
+{% block content %}
+	<div class="container">
+		<section class="intro">
+			<h1>CONNECT !</h1>
+			<div class="official-intro">
+				<a href="https://www.x.com/@wisemanjoearts" class="socials">
+					<img src='https://skillicons.dev/icons?i=twitter'>
+					<div>Follow me on Twitter</div>
+				</a>
+				<a href="https://www.linkedin.com/in/wisemanumanah" class="socials">
+					<img src='https://skillicons.dev/icons?i=linkedin'>
+					<div>Connect with me on Linkedin</div>
+				</a>
+				<a href="https://www.github.com/wiseman-umanah" class="socials">
+					<img src='https://skillicons.dev/icons?i=github'>
+					<div>Let's collaborate on Github</div>
+				</a>
+				<a href="https://discordapp.com/users/1147321132647723090" class="socials">
+					<img src='https://skillicons.dev/icons?i=discord'>
+					<div>Chat with me on Discord</div>
+				</a>
+				<a href="mailto:wisemanumanah@gmail.com" class="socials">
+					<img src='https://skillicons.dev/icons?i=gmail' alt="Gmail Icon">
+					<div>Send me an Email</div>
+				</a>
+			</div>
+			<dotlottie-player src="https://lottie.host/65bdaeeb-86eb-41ec-87b1-6297f0aadb19/HPkujhzoR9.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+		</section>
+	</div>
+{% endblock %}

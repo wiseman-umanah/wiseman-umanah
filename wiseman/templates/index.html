@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Wiseman Umanah {% endblock %}
+{% block css %}<link href='{{ url_for("static", filename="styles/index.css") }}' rel='stylesheet'>{% endblock %}
+{% block content %}
+	<section class="intro">
+		<div class="image-holder">
+			<img src="{{ url_for('static', filename='images/wiseman.png') }}" class="wiseman">
+		</div>
+		<div class="official-intro">
+			<h5>WELCOME TO MY WORLD</h5>
+			<h1>Hi, I'm Wiseman Umanah <span>a</span> Professional Backend <span>Developer.</span></h1>
+			<p>Passionate programmer and problem solver. Constantly learning and growing. Ready for collaboration!</p>
+			<button>Hire Me</button>
+		</div>
+	</section>
+	<section class="portfolio-section">
+		<div>
+			<div class="image-2">
+				<img src="{{ url_for('static', filename='images/wiseman2.jpg') }}">
+			</div>
+			<div class="resume-intro">
+				<p>
+					Hello there, and welcome to my portfolio! I'm thrilled to have you here.
+					If you're interested in learning more about my professional journey, feel free to check out my resume. 
+					It's a quick look at the experiences, skills, and projects that shape who I am as a developer.
+					Don't hesitate to download it below!
+				</p>
+				<button>Download my Resume</button>
+			</div>
+		</div>
+	</section>
+{% endblock %}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %} {% endblock %}</title>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link href='{{url_for("static", filename="styles/general.css") }}' rel='stylesheet'>
+	<link href='{{ url_for("static", filename="styles/header.css")  }}' rel='stylesheet'>
+	<link href='{{ url_for("static", filename="styles/footer.css")  }}' rel="stylesheet">
+	{% block css %} {% endblock %}
+	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+	<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+	<script src="{{ url_for('static', filename='scripts/index.js') }}"></script>
+</head>
+<body>
+	<header>
+		<div class="navbar">
+			<div>
+				<img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
+			</div>
+			<nav class="links">
+				<div><a href="{{ url_for('index') }}">HOME</a></div>
+				<div><a href="{{ url_for('about') }}">ABOUT</a></div>
+				<div><a href="{{ url_for('services') }}">SERVICES</a></div>
+				<div><a href="{{ url_for('contact') }}">CONTACT</a></div>
+			</nav>
+			<div class="toggle_btn">
+				<i class='bx bx-x'></i>
+				<i class='bx bx-menu'></i>
+			</div>
+		</div>
+
+		<nav class="dropdown-menu open">
+			<div><a href="{{ url_for('index') }}">HOME</a></div>
+			<div><a href="{{ url_for('about') }}">ABOUT</a></div>
+			<div><a href="{{ url_for('services') }}">SERVICES</a></div>
+			<div><a href="{{ url_for('contact') }}">CONTACT</a></div>
+		</nav>
+	</header>
+	<main>
+		{% block content %} {% endblock %}
+	</main>
+	<footer>
+		<div class="author"><small>&copy; <span id="year"></span> Wiseman Umanah</small></div>
+		<nav class="footer-links">
+			<div><a href="{{ url_for('index') }}">HOME</a></div>
+			<div><a href="{{ url_for('about') }}">ABOUT</a></div>
+			<div><a href="{{ url_for('services') }}">SERVICES</a></div>
+			<div><a href="{{ url_for('contact') }}">CONTACT</a></div>
+		</nav>
+		<div class="small-icons">
+			<a href="https://www.linkedin.com/in/wisemanumanah"><iconify-icon icon="flowbite:linkedin-solid"  style="color: grey"></iconify-icon></a>
+			<a href="https://www.x.com/@wisemanjoearts"><iconify-icon icon="flowbite:x-solid"  style="color: grey"></iconify-icon></a>
+			<a href="https://www.github.com/wiseman-umanah"><iconify-icon icon="flowbite:github-solid"  style="color: grey"></iconify-icon></a>
+			<a href="https://discordapp.com/users/1147321132647723090"><iconify-icon icon="flowbite:discord-solid"  style="color: grey"></iconify-icon></a>
+		</div>
+	</footer>
+</body>
+</html>
