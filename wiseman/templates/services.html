@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 {% block title %}Wiseman Umanah | Services{% endblock %}
 {% block css %}<link href='{{ url_for("static", filename="styles/services.css") }}' rel='stylesheet'>{% endblock %}
+{% block optional_script %}<script src="{{ url_for('static', filename='scripts/services.js') }}"></script>{% endblock %}
 {% block content %}
 	<section class="intro">
 		<div>
 			<h1>Assisting you in achieving your goals!</h1>
-			<p>Keeping business thriving with top-nutch IT Services & Solutions. Our prority is
+			<p>Keeping business thriving with top-nutch IT Services & Solutions. My prority is
 			to provide bespoke, fast and professional solutions & services that will uplift and 
 			transform businesses creatively and professionally</p>
-			<button>Hire Me!</button>
+			<button class="hire-me">Hire Me!</button>
 		</div>
 		<div>
 			<dotlottie-player src="https://lottie.host/94060156-20f5-4032-a061-de24b43e4491/beznze8nZk.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
@@ -22,37 +23,37 @@
 					<dotlottie-player src="https://lottie.host/83c29895-027d-4289-9221-dcd19e968b4b/XHagPO3wop.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
 					<h3>WEBSITE DEVELOPMENT & DESIGNING</h3>
 					<p>Bring your vision to life on the web.<br>
-					Our expert team will develop your dream project with the utmost quality and precision
+					I'll will develop your dream project with the utmost quality and precision
 					</p>
-					<button>Learn more</button>
+					<button class="learn" data-name="web-dev">Learn more</button>
 				</div>
 				<div>
 					<dotlottie-player src="https://lottie.host/3cb4dbaf-3b93-4749-a578-302ce42d987a/9AyH1Yx3pc.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
 					<h3>SERVER INTEGRITY & DATABASE MANAGEMENT</h3>
-					<p>Protect your database and maintain the integrity of your servers with our IT solutions
+					<p>Protect your database and maintain the integrity of your servers with my IT solutions
 					</p>
-					<button>Learn more</button>
+					<button class="learn" data-name="database">Learn more</button>
 				</div>
-				<div>
+				<!-- <div>
 					<dotlottie-player src="https://lottie.host/0c8543f0-5db6-4ee3-8011-445ba105f327/GjYy5O7M8a.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
 					<h3>IT SUPPORT</h3>
-					<p>Our IT development teams excel at supporting businesses with efficient operations.
+					<p>I excel at supporting businesses with efficient operations.
 					</p>
 					<button>Learn more</button>
-				</div>
+				</div> -->
 				
 				<div>
 					<dotlottie-player src="https://lottie.host/c6f04ce0-0d09-4755-9ba1-d6d8add8a300/MnLudiyQmX.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
 					<h3>CREATIVE ARTWORKS</h3>
-					<p>We also tell stories through stunning art works and designs
+					<p>I also tell stories through stunning art works and designs
 					</p>
-					<button>Learn more</button>
+					<button class="learn" data-name="arts">Learn more</button>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section>
-		<h2>Why Choose Our Services?</h2>
+		<h2>Why Choose Me?</h2>
 		<div class="section3">
 			<div class="section3-sub">
 				<div>

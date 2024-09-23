@@ -18,6 +18,9 @@ header {
 	color: white;
 }
 
+header a {
+	color: white;
+}
 .bx-x,
 .bx-menu {
 	color: var(--special);
@@ -38,8 +41,11 @@ header {
 	gap: 5rem;
 	font-weight: 700;
 	font-size: 1.1rem;
-	color: var(--special);
 	cursor: pointer;
+}
+
+.navbar a {
+	color: var(--special);
 }
 
 .navbar .toggle_btn {

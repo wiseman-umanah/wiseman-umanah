@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	$('.hire-me').on('click', function() {
+		window.location.href = '/contact';
+	})
+	
     $('.bx-menu').on('click', function() {
         $('.dropdown-menu').addClass('open');
         $('.bx-menu').hide();

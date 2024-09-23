@@ -1,22 +1,23 @@
 {% extends "base.html" %}
 {% block title %}Wiseman Umanah {% endblock %}
 {% block css %}<link href='{{ url_for("static", filename="styles/index.css") }}' rel='stylesheet'>{% endblock %}
+{% block optional_script %}<script src="{{ url_for('static', filename='scripts/index.js') }}"></script>{% endblock %}
 {% block content %}
 	<section class="intro">
 		<div class="image-holder">
-			<img src="{{ url_for('static', filename='images/wiseman.png') }}" class="wiseman">
+			<img src="{{ url_for('static', filename='images/wiseman.png') }}" class="wiseman" alt="Wiseman's picture on jacket">
 		</div>
 		<div class="official-intro">
 			<h5>WELCOME TO MY WORLD</h5>
 			<h1>Hi, I'm Wiseman Umanah <span>a</span> Professional Backend <span>Developer.</span></h1>
 			<p>Passionate programmer and problem solver. Constantly learning and growing. Ready for collaboration!</p>
-			<button>Hire Me</button>
+			<button class="hire-me">Hire Me</button>
 		</div>
 	</section>
 	<section class="portfolio-section">
 		<div>
 			<div class="image-2">
-				<img src="{{ url_for('static', filename='images/wiseman2.jpg') }}">
+				<img src="{{ url_for('static', filename='images/wiseman2.jpg') }}" alt="Wiseman's picture on suit (professional look)">
 			</div>
 			<div class="resume-intro">
 				<p>
@@ -25,7 +26,7 @@
 					It's a quick look at the experiences, skills, and projects that shape who I am as a developer.
 					Don't hesitate to download it below!
 				</p>
-				<button>Download my Resume</button>
+				<button class="download">Download my Resume</button>
 			</div>
 		</div>
 	</section>

@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Web Development and Design {% endblock %}
+{% block css %}<link href="{{ url_for('static', filename='styles/web-dev.css')}}" rel="stylesheet"> {% endblock %}
+{% block optional_script %}<script src="{{ url_for('static', filename='scripts/services.js')}}"></script>{% endblock %}
+{% block content %}
+<div class="container">
+	<h1>Web Development & Design</h1>
+	<dotlottie-player src="https://lottie.host/0c8543f0-5db6-4ee3-8011-445ba105f327/GjYy5O7M8a.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+	<div class="w-services">
+		<div class="web-service">
+			<div class="exclusive" >EXCLUSIVE</div>
+			<h4>LANDING PAGE DEVELOPMENT</h4>
+			<p>
+				Get a custom landing page designed to capture attention, engage visitors, and drive conversions. I specialize in creating innovative and user-friendly landing pages that align with your brand and marketing goals.
+			</p>
+			<button class="learn" data-name="landing">Learn More</button>
+		</div>
+		<div class="web-service">
+			<div class="exclusive" >EXCLUSIVE</div>
+			<h4>E-COMMERCE WEBSITE DEVELOPMENT</h4>
+			<p>
+				Elevate your business with a beautifully designed e-commerce website that's easy to navigate and shop from. I will develop a custom online store that captures attention, provides a seamless user experience, and drives sales.
+			</p>
+			<button class="learn" data-name="e-commerce">Learn More</button>
+		</div>
+		<div class="web-service">
+			<div class="exclusive" >EXCLUSIVE</div>
+			<h4>COPORATE WEBSITE DEVELOPMENT</h4>
+			<p>
+				Let your website speak for you. A professional, user-friendly corporate website that effectively communicates your brand's message and engages your audience, turning them into loyal customers.
+			</p>
+			<button class="learn" data-name="website">Learn More</button>
+		</div>
+		<div class="web-service">
+			<div class="exclusive" >EXCLUSIVE</div>
+			<h4>PORTFOLIO WEBSITE DEVELOPMENT</h4>
+			<p>
+				Create a lasting impression with a beautifully designed and user-friendly website. I will craft a custom website that showcases your brand's unique identity and helps you achieve your goals.
+			</p>
+			<button class="learn" data-name="portfolio">Learn More</button>
+		</div>
+	</div>
+</div>
+{% endblock %}

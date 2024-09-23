@@ -1,0 +1,20 @@
+main {
+	width: 100%;
+}
+.container {
+	display: grid;
+	place-items: center;
+	align-items: center;
+	font-weight: 700;
+}
+
+.error {
+	color: red;
+	font-size: 4.5rem;
+	margin-bottom: 5%;
+}
+
+.report {
+	font-size: 1.5rem;
+	text-align: center;
+}

@@ -1,9 +1,10 @@
 footer {
-	height: 60px;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	color: grey;
 	justify-content: center;
-	gap: 100px;
+	gap: 5%;
 	align-items: center;
 	position: fixed;
 	border-top: 1px solid var(--special);
@@ -12,12 +13,16 @@ footer {
 	left: 0;
 	right: 0;
 	background: white;
+	padding: 5px 10px;
 }
 
 .footer-links {
 	display: flex;
-	gap: 50px;
+	gap: 10px;
+	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
+	font-size: .8rem;
 }
 
 .footer-links > div {
@@ -25,11 +30,23 @@ footer {
 }
 
 .author {
-	font-size: 20px;
+	font-size: .8rem;
 }
 
 .small-icons {
 	display: flex;
-	gap: 50px;
+	gap: 30%;
 	align-items: center;
+	justify-content: center;
+}
+
+footer a {
+	color: grey;
+}
+
+@media (min-width: 760px) {
+	footer {
+		flex-direction: row;
+		font-size: 1rem;
+	}
 }

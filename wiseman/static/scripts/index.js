@@ -1,26 +1,26 @@
-$(document).ready(function() {
-    $('.bx-menu').on('click', function() {
-        $('.dropdown-menu').addClass('open');
-        $('.bx-menu').hide();
-        $('.bx-x').show();
-    });
+$(document).ready(() => {
+	$('.download').on('click', function() {
+		fetch('/cv_download')
+		.then(response => {
+			if (!response.ok) {
+				console.error('Error while retireving CV');
+			} else {
+				response.blob().then(blob => {
+					const url = URL.createObjectURL(blob);
+					const a = document.createElement('a');
+					a.href = url;
+					a.download = 'Wiseman.txt';
+					a.style.display = 'none';
+					document.body.appendChild(a);
+					a.click();
+					document.body.removeChild(a);
+					URL.revokeObjectURL(url);   
 
-    $('.bx-x').on('click', function() {
-        $('.dropdown-menu').removeClass('open');
-        $('.bx-x').hide();
-        $('.bx-menu').show();
-    });
-
-	$('#year').text(new Date().getFullYear());
-
-	function handleResize() {
-        if ($(window).width() > 900) {
-            $('.dropdown-menu').removeClass('open');
-		} else {
-			$('.dropdown-menu').addClass('open');
-		}
-    }
-	handleResize();
-
-    $(window).resize(handleResize);
+				});
+			}
+		})
+		.catch(error => {
+			console.error('Error while processing CV')
+		});
+	});
 });

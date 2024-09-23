@@ -1,5 +1,5 @@
-from flask import Flask, render_template, send_file, send_from_directory
-from os import getenv
+from flask import Flask, render_template, send_file, abort
+from os import getenv, path
 from dotenv import load_dotenv
 
 
@@ -7,6 +7,7 @@ load_dotenv()
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = getenv("SECRET_KEY")
+app.config["UPLOAD_FOLDER"] = "utils"
 
 
 @app.route("/")
@@ -33,13 +34,29 @@ def services():
 
 @app.route("/cv_download", strict_slashes=False)
 def cv():
-	return render_template("index.html"), 200
+	file_path = path.join(app.config["UPLOAD_FOLDER"], 'hello.txt')
+	return send_file(file_path, as_attachment=True, download_name="Wiseman's CV")
+
+
+@app.route("/services/<build>", strict_slashes=False)
+def website(build):
+	try:
+		return render_template(f'{build}.html'), 200
+	except Exception:
+		abort(404)
 
 
 @app.errorhandler(404)
-def fourOfour():
-	return render_template("index.html"), 200
+def fourOfour(error):
+	report = "THIS PAGE IS NOT FOUND OR UNDER-DEVELOPMENT"
+	return render_template("error.html", error="404", report=report), 200
+
+
+@app.errorhandler(500)
+def fiveOO(error):
+	report = "OUR SYSTEM COULDN'T PROCESS YOUR REQUEST, TRY SOMETHING ELSE"
+	return render_template("error.html", error="404", report=report), 200
 
 
 if __name__ == "__main__":
-	app.run()
+	app.run(debug=True)
