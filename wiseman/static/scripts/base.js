@@ -3,6 +3,14 @@ $(document).ready(function() {
 		window.location.href = '/contact';
 	})
 	
+	if ($('.dropdown-menu').hasClass('open')) {
+        $('.bx-menu').hide();
+        $('.bx-x').show();
+    } else {
+        $('.bx-x').hide();
+        $('.bx-menu').show();
+    }
+
     $('.bx-menu').on('click', function() {
         $('.dropdown-menu').addClass('open');
         $('.bx-menu').hide();
@@ -17,14 +25,4 @@ $(document).ready(function() {
 
 	$('#year').text(new Date().getFullYear());
 
-	function handleResize() {
-        if ($(window).width() > 900) {
-            $('.dropdown-menu').removeClass('open');
-		} else {
-			$('.dropdown-menu').addClass('open');
-		}
-    }
-	handleResize();
-
-    $(window).resize(handleResize);
 });

@@ -33,6 +33,13 @@ h1 {
 	background: linear-gradient(to top, rgb(50, 50, 50), rgba(0, 170, 255, 0.3), rgb(73, 73, 189));
 	margin-bottom: 20px;
 	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.btn {
+	display: flex;
+	justify-content: center;
 }
 
 .web-service:hover {
@@ -48,7 +55,8 @@ button {
 	left: 0;
 	top: 0;
 	border-top-left-radius: 15px;
-	font-size: 0.5rem;
+	font-size: 0.8rem;
+	border-bottom-right-radius: 10px;
 }
 
 h4, p {

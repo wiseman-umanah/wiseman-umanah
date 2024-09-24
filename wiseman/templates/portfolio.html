@@ -1,7 +1,9 @@
 {% extends "abstract.html" %}
+{% block title %}Web Development and Design | Portfolio Website Blog{% endblock %}
 {% block heading %}Portfolio Website Service{% endblock %}
 {% block introduction %}What's a Portfolio Website{% endblock %}
 {% block description %}A portfolio website helps your customers track, reach and remember you for the next services. Besides professional work, it also represents your personality, capabilities, and traits to make you stand out. {% endblock %}
+{% block image %}<img src="{{ url_for('static', filename='images/portfolio.jpg')}}">{% endblock %}
 {% block to_do %}
 <li><b>Visual Appeal:</b> I'll create a visually stunning website with custom graphics that reflect your brand and engage visitors.</li>
 <li><b>Technical Excellence:</b> I'll ensure your website is optimized for speed and security, while handling technical aspects like broken backlinks and server configuration.</li>

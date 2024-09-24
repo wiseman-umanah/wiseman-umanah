@@ -159,6 +159,7 @@ h5, span {
 	border-radius: 6px;
 	font-size: 1.2rem;
 	color: white;
+	box-shadow: 0 14px 28px rgba(0,0, 0, .25), 0 10px 10px rgba(0,0,0, .22);
 }
 .left-container {
 	left: 0;
@@ -166,10 +167,6 @@ h5, span {
 
 .right-container {
 	left: 50%;
-}
-
-.right-container .circle {
-	left: -20px;
 }
 
 .project-timeline::after {
@@ -218,6 +215,13 @@ h5, span {
 		left: 10px;
 	}
 	
+	.text-box {
+		font-size: .8rem;
+	}
+
+	.container {
+		padding: 30px 10px;
+	}
 }
 
 @media (min-width: 900px) {

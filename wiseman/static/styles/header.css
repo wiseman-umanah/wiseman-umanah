@@ -57,16 +57,16 @@ header a {
 .dropdown-menu {
 	position: absolute;
 	background-color: var(--special);
-	right: 2rem;;
+	left: 0;
+	right: 0;
 	top: 60px;
 	display: none;
-	width: 300px;
 	color: white;
 	font-weight: 700;
 	overflow: hidden;
-	border-radius: 10px;
-	box-shadow: 0 0 50px rgb(174, 169, 169);
-	border-top-right-radius: 0;
+	box-shadow: 0 14px 28px rgba(0,0, 0, .25), 0 10px 10px rgba(0,0,0, .22);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .dropdown-menu.open {
@@ -100,10 +100,8 @@ header a {
 	}
 }
 
-@media (max-width: 576px) {
-	.dropdown-menu {
-		left: 2rem;
-		width: unset;
-		border-top-left-radius: 0;
+@media (min-width: 992px) {
+	.navbar .links div a:hover {
+	color: rgb(6, 6, 21);
 	}
 }

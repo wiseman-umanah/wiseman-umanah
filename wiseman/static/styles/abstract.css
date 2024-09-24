@@ -16,6 +16,15 @@ main {
 	align-items: center;
 }
 
+.image {
+	max-width: 700px;
+	margin-bottom: 30px;
+}
+
+img {
+	width: 100%;
+	border-radius: 10px;
+}
 h1 {
 	font-size: 2.5rem;
 	

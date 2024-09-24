@@ -35,7 +35,7 @@ def services():
 @app.route("/cv_download", strict_slashes=False)
 def cv():
 	file_path = path.join(app.config["UPLOAD_FOLDER"], 'hello.txt')
-	return send_file(file_path, as_attachment=True, download_name="Wiseman's CV")
+	return send_file(file_path, as_attachment=True, download_name="Wiseman")
 
 
 @app.route("/services/<build>", strict_slashes=False)
