@@ -2,14 +2,14 @@
 	"version": 2,
 	"builds": [
 	  {
-		"src": "wiseman/app.py",
+		"src": "app.py",
 		"use": "@vercel/python"
 	  }
 	],
 	"routes": [
 	  {
 		"src": "/(.*)",
-		"dest": "wiseman/app.py"
+		"dest": "app.py"
 	  }
 	]
   }
