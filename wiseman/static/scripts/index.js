@@ -9,7 +9,7 @@ $(document).ready(() => {
 					const url = URL.createObjectURL(blob);
 					const a = document.createElement('a');
 					a.href = url;
-					a.download = 'Wiseman.txt';
+					a.download = 'Wiseman.pdf';
 					a.style.display = 'none';
 					document.body.appendChild(a);
 					a.click();

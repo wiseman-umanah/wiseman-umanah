@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_file, abort
+from flask import Flask, render_template, send_file, abort, send_from_directory
 from os import getenv, path
 from dotenv import load_dotenv
 
@@ -34,8 +34,7 @@ def services():
 
 @app.route("/cv_download", strict_slashes=False)
 def cv():
-	file_path = path.join(app.config["UPLOAD_FOLDER"], 'hello.txt')
-	return send_file(file_path, as_attachment=True, download_name="Wiseman")
+	return send_from_directory(app.config['UPLOAD_FOLDER'], 'Wiseman.pdf')
 
 
 @app.route("/services/<build>", strict_slashes=False)
