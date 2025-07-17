@@ -1,5 +1,4 @@
-![1722629249708](https://pacman.abozanona.me?username=wiseman-umanah)
-
+<img src="https://pacman.abozanona.me?username=wiseman-umanah" width="100%">
 
 <div align="left">
 	<img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="200">
