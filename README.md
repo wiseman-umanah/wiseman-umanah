@@ -1,90 +1,16 @@
-![1722629249708](https://github.com/user-attachments/assets/132c6c2f-7518-44dc-9d1d-cffab69ebfe3)
-
-# Hi, I'm Wiseman Umanah 👋
-![status](https://img.shields.io/badge/currently-online-green.svg?style=flat-square) ![status](https://img.shields.io/badge/coding-contribution-blue.svg?style=flat-square) ![listening](https://img.shields.io/badge/listening-podcasts-black.svg?style=flat-square&logo=spotify)
-
-## 🎓 ALX Software Engineering Program Alumni
-
-### Who Am I?
-I started my software engineering journey through the ALX Software Engineering Program. This program not only taught me the fundamentals but also provided a platform for hands-on experience with a wide range of technologies and projects. My passion lies in solving real-world problems using cutting-edge technologies.
-
-### 🔥 What Inspires Me
-I’m passionate about creating impactful software solutions, collaborating with fellow developers, and always staying curious about new advancements in tech. Innovation and continuous learning are my biggest motivators.
-
-### 🛠️ Technical Skills
-I am proficient in:
-
-- **Languages**:
-
-    [![MySkills](https://skillicons.dev/icons?i=js,html,css,python,c,mysql,postgresql,typescript)](https://skillicons.dev)
-
-- **Frameworks & Libraries**: 
-
-    [![My Skills](https://skillicons.dev/icons?i=nodejs,flask,express,jquery)](https://skillicons.dev)
-
-- **Tools & Technologies**: 
-
-    [![My Skills](https://skillicons.dev/icons?i=bash,git,github,redis,nginx,mongodb)](https://skillicons.dev) ![Puppet](https://img.shields.io/badge/Puppet-black.svg?style=flat-square&logo=puppet)
-
-- **Favourite Os**:
-
-    ![My Skills](https://skillicons.dev/icons?i=kali)
-
----
-
-## 💻 Key Projects
-Here are some projects I've worked on:
-
-- **[JWS Collections](https://jws-collections.vercel.app/)**    
-  **Role:** Full-Stack Developer  
-  **Description:** JWS is an e-commerce platform showcasing a wide variety of footwear. I worked on both front and back end development.  
-  **Tech Stack:** Python, MySQL, Javascript, jQuery, HTML/CSS
-
-- **[Edu Cloud Connect](https://github.com/Semaediong01/EDU-CLOUD-CONNECT)**  
-  **Role:** Backend Engineer  
-  **Description:** A web-based system for maintaining a healthy lecturer-student relationship. Lecturers can access students' academic submissions and communicate via global chat.  
-  **Tech Stack:** Python, MySQL
-
-- **[Web Tic-Tac-Toe](https://github.com/Berthran/web_tic_tac_toe)**  
-  **Role:** Backend Engineer  
-  **Description:** A web-based Tic-Tac-Toe game where players can either connect with another player or play against AI.  
-  **Tech Stack:** Python
-
-- **[Astrics](https://github.com/wiseman-umanah/Astrics)**  
-  **Role:** Full-Stack Developer  
-  **Description:** A web project providing the latest updates about space and the universe, aimed at educating users about science.  
-  **Tech Stack:** Python, PostgreSQL, jQuery, HTML/CSS, Javascript
-
-_For more projects, please visit the **[Repositories](https://github.com/wiseman-umanah?tab=repositories)** section._
+![1722629249708](https://pacman.abozanona.me?username=wiseman-umanah)
 
 
----
-
-## 📈 GitHub Stats
-
-![streak-stats](https://github-readme-streak-stats.herokuapp.com/?user=wiseman-umanah&theme=radical) ![Wiseman's GitHub stats](https://github-readme-stats.vercel.app/api?username=wiseman-umanah&show_icons=true&theme=dark) ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=wiseman-umanah&layout=compact&theme=blueberry&count_private=true&hide_border=true)
-
-
----
-
-## 🌱 What I’m Learning Now
-
--  ![React](https://skillicons.dev/icons?i=react)
-- Currently, I’m focusing on improving the developer experience and building robust backend systems that can scale effectively.
+<div align="left">
+	<img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="200">
+	<img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="200">
+	<img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" width="200">
+	<img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="200">
+	<img src="https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif" width="200">
+	<img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="200">
+	<img src="https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif" width="200">
+</div>
 
 
----
+![alt text](final.gif)
 
-## Read My Mind 
-You can read my thoughts and get insights from articles that I have written to help other growing developers like me in [Hashnode](https://techwhiz.hashnode.dev/)
-
-
----
-
-## 🤝 Connect With Me
-[![My Skills](https://skillicons.dev/icons?i=gmail)](mailto:wisemanumanah@gmail.com) [![My Skills](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/wisemanumanah/) [![My Skills](https://skillicons.dev/icons?i=twitter)](https://x.com/wisemanjoearts)
-
-Feel free to reach out to me for collaborations or discussions about new opportunities! Let's get in touch
-
-
----
