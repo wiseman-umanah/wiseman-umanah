@@ -5,6 +5,9 @@ import { useState} from 'react'
 import HackerLoader from './components/HackerLoader'
 import './index.css'
 import Joyride from 'react-joyride';
+import { Helmet } from "react-helmet-async";
+
+
 
 function App() {
   const [activeCommand, setActiveCommand] = useState<string>('');
@@ -37,70 +40,110 @@ function App() {
   }
 
   return (
-    <div className="relative min-h-screen bg-black text-green-400 font-mono">
-      {showTour && (
-        <Joyride
-          steps={joyrideSteps}
-          continuous
-          showSkipButton
-          showProgress
-          styles={{
-            options: {
-              zIndex: 10000,
-              primaryColor: '#00ff41', 
-              backgroundColor: '#111',
-              textColor: '#d1ffd6',
-              arrowColor: '#111',
-              overlayColor: 'rgba(0,0,0,0.7)',
-              width: 380,
-              spotlightShadow: '0 0 0 2px #00ff41',
-            },
-            buttonNext: {
-              backgroundColor: '#00ff41',
-              color: '#111',
-              fontWeight: 700,
-              borderRadius: 4,
-              boxShadow: '0 0 0 2px #00ff41',
-            },
-            buttonBack: {
-              color: '#00ff41',
-              background: 'transparent',
-              fontWeight: 700,
-            },
-            buttonSkip: {
-              color: '#00ff41',
-              background: 'transparent',
-              fontWeight: 700,
-            },
-            tooltip: {
-              backgroundColor: '#111',
-              color: '#d1ffd6',
-              border: '1px solid #00ff41',
-              boxShadow: '0 0 12px #00ff41',
-            }
-          }}
-          locale={{
-            back: 'Back',
-            close: 'Close',
-            last: 'Done',
-            next: 'Next',
-            skip: 'Skip',
-          }}
-          callback={handleJoyrideCallback}
-        />
-      )}
-      <MatrixRain />
-      <div className="relative z-10 flex flex-col min-h-screen">
-        <div className="flex flex-1 flex-col md:flex-row w-full mt-4 gap-4">
-          <div className="md:w-1/3 w-full terminal-joyride">
-            <TerminalNav onCommand={setActiveCommand} />
-          </div>
-          <div className="md:w-2/3 w-full display-joyride">
-            <DisplayPanel command={activeCommand} />
-          </div>
-        </div>
-      </div>
-    </div>
+	<>
+		<Helmet>
+			<title>Wiseman Umanah | Software Engineer</title>
+			<meta name="description" content="Portfolio of Wiseman Umanah — software engineer, designer and system builder based in Nigeria." />
+			<meta name="keywords" content="Wiseman, Software Engineer, Developer, Nigeria, React, Backend, Python, Flask, Django, Node" />
+			<meta name="author" content="Wiseman Umanah" />
+
+			<meta property="og:type" content="website" />
+			<meta property="og:title" content="Wiseman Umanah | Software Engineer" />
+			<meta property="og:description" content="Explore Wiseman's portfolio — showcasing work, skills, and projects." />
+			<meta property="og:image" content="/me.jpg" />
+			<meta property="og:url" content="https://wisemanumanah.vercel.app" />
+
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:title" content="Wiseman Umanah | Software Engineer" />
+			<meta name="twitter:description" content="Portfolio of Wiseman Umanah." />
+			<meta name="twitter:image" content="/me.jpg" />
+
+			<script type="application/ld+json">
+				{JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "Person",
+					name: "Wiseman Umanah",
+					url: "https://wisemanumanah.vercel.app",
+					sameAs: [
+						"https://linkedin.com/in/wiseman-umanah",
+						"https://github.com/wiseman-umanah",
+						"https://x.com/0xwisemanumanah"
+					],
+					jobTitle: "Software Engineer",
+					worksFor: {
+						"@type": "Organization",
+						name: "Freelance/Contract"
+					}
+				})}
+			</script>
+		</Helmet>
+
+		<div className="relative min-h-screen bg-black text-green-400 font-mono">
+		{showTour && (
+			<Joyride
+			steps={joyrideSteps}
+			continuous
+			showSkipButton
+			showProgress
+			styles={{
+				options: {
+				zIndex: 10000,
+				primaryColor: '#00ff41', 
+				backgroundColor: '#111',
+				textColor: '#d1ffd6',
+				arrowColor: '#111',
+				overlayColor: 'rgba(0,0,0,0.7)',
+				width: 380,
+				spotlightShadow: '0 0 0 2px #00ff41',
+				},
+				buttonNext: {
+				backgroundColor: '#00ff41',
+				color: '#111',
+				fontWeight: 700,
+				borderRadius: 4,
+				boxShadow: '0 0 0 2px #00ff41',
+				},
+				buttonBack: {
+				color: '#00ff41',
+				background: 'transparent',
+				fontWeight: 700,
+				},
+				buttonSkip: {
+				color: '#00ff41',
+				background: 'transparent',
+				fontWeight: 700,
+				},
+				tooltip: {
+				backgroundColor: '#111',
+				color: '#d1ffd6',
+				border: '1px solid #00ff41',
+				boxShadow: '0 0 12px #00ff41',
+				}
+			}}
+			locale={{
+				back: 'Back',
+				close: 'Close',
+				last: 'Done',
+				next: 'Next',
+				skip: 'Skip',
+			}}
+			callback={handleJoyrideCallback}
+			/>
+		)}
+		<MatrixRain />
+		<div className="relative z-10 flex flex-col min-h-screen">
+			<div className="flex flex-1 flex-col md:flex-row w-full mt-4 gap-4">
+			<div className="md:w-1/3 w-full terminal-joyride">
+				<TerminalNav onCommand={setActiveCommand} />
+			</div>
+			<div className="md:w-2/3 w-full display-joyride">
+				<DisplayPanel command={activeCommand} />
+			</div>
+			</div>
+		</div>
+		</div>
+	</>
+    
   )
 }
 
