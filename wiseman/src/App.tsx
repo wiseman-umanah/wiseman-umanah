@@ -42,22 +42,6 @@ function App() {
   return (
 	<>
 		<Helmet>
-			<title>Wiseman Umanah | Software Engineer</title>
-			<meta name="description" content="Portfolio of Wiseman Umanah — software engineer, designer and system builder based in Nigeria." />
-			<meta name="keywords" content="Wiseman, Software Engineer, Developer, Nigeria, React, Backend, Python, Flask, Django, Node" />
-			<meta name="author" content="Wiseman Umanah" />
-
-			<meta property="og:type" content="website" />
-			<meta property="og:title" content="Wiseman Umanah | Software Engineer" />
-			<meta property="og:description" content="Explore Wiseman's portfolio — showcasing work, skills, and projects." />
-			<meta property="og:image" content="/me.jpg" />
-			<meta property="og:url" content="https://wisemanumanah.vercel.app" />
-
-			<meta name="twitter:card" content="summary_large_image" />
-			<meta name="twitter:title" content="Wiseman Umanah | Software Engineer" />
-			<meta name="twitter:description" content="Portfolio of Wiseman Umanah." />
-			<meta name="twitter:image" content="/me.jpg" />
-
 			<script type="application/ld+json">
 				{JSON.stringify({
 					"@context": "https://schema.org",
