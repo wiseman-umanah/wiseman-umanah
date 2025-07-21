@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+* {
+	font-family: 'Kode Mono', monospace;
+}
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #000;
+  color: #00ff41;
+  overflow-x: hidden;
+}
+
+.matrix-scanlines {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0px,
+    rgba(0,0,0,0.1) 2px,
+    rgba(0,0,0,0.2) 4px,
+    rgba(0,0,0,0) 6px
+  );
+  mix-blend-mode: overlay;
+  opacity: 0.3;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { border-right-color: #00ff41; }
+  50% { border-right-color: transparent; }
+}
+
+.animate-blink-cursor {
+  border-right: 2px solid #00ff41;
+  animation: blink-cursor 1s steps(1) infinite;
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(100%); opacity: 0; }
+}
+.animate-scanline {
+  animation: scanline 2.5s linear infinite;
+}
+
