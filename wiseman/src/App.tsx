@@ -24,7 +24,7 @@ function App() {
     },
     {
       target: '.display-joyride',
-      content: 'This panel will every relevant content based on the commands given.',
+      content: 'This panel will display every relevant content based on the commands given.',
     },
   ];
 

@@ -19,6 +19,7 @@ const helpLines = [
   '- download:   Download my CV',
   '- help:       List available commands',
   '- clear:      Clear the terminal',
+  '- history:	 Returns your history'
 ];
 
 interface TerminalNavProps {
@@ -62,10 +63,17 @@ const TerminalNav = ({ onCommand, autoType = false, typed = '' }: TerminalNavPro
       setHistoryIndex(-1);
       setHistory(h => [...h, `> ${value}`]);
       setInput('');
-
+	
       if (value === 'help') {
         setHistory(h => [...h, ...helpLines]);
-      } else if (value === 'clear') {
+      } else if (value === 'history') {
+		if (commandHistory.length === 0) {
+			setHistory(h => [...h, 'No commands in history.']);
+		} else {
+			const lines = commandHistory.map((cmd, idx) => `${idx + 1}: ${cmd}`);
+			setHistory(h => [...h, ...lines]);
+		}
+	} else if (value === 'clear') {
         setHistory(helpLines);
       } else if (value === 'download') {
         let progress = 0;
@@ -117,14 +125,28 @@ const TerminalNav = ({ onCommand, autoType = false, typed = '' }: TerminalNavPro
     }
 
     if (key === 'Tab') {
-      e.preventDefault();
-      const matches = commands.map(c => c.cmd).filter(cmd => cmd.startsWith(input));
-      if (matches.length === 1) {
-        setInput(matches[0]);
-      } else if (matches.length > 1) {
-        setHistory(h => [...h, ...matches.map(m => `  ${m}`)]);
-      }
-    }
+		e.preventDefault();
+
+		const matches = commands
+			.map(c => c.cmd)
+			.filter(cmd => cmd.startsWith(input));
+
+		if (matches.length === 1) {
+			setInput(matches[0]);
+		} else if (matches.length > 1) {
+			setHistory(h => [
+			...h,
+			'Suggestions:',
+			...matches.map(m => `  ${m}`)
+			]);
+		} else if (matches.length === 0 && input.trim() !== '') {
+			setHistory(h => [
+			...h,
+			`No suggestions for: "${input}"`
+			]);
+		}
+	}
+
   };
 
   const handleContainerClick = () => {
@@ -148,6 +170,8 @@ const TerminalNav = ({ onCommand, autoType = false, typed = '' }: TerminalNavPro
             spellCheck={false}
             autoFocus
             disabled={autoType}
+			autoCapitalize="off"
+			autoCorrect="off"
           />
         </div>
       </div>
